@@ -1,0 +1,20 @@
+class ATMTransaction 
+{
+	public static void main(String[] args) 
+	{
+		int accNum= 123456,currBalance=15000,withdraw=3700;
+		int remainBalance=currBalance-withdraw;
+		int r1=withdraw/500;
+		int r2=withdraw%500;
+		int r3=r2/200;
+		int r4=r3/100;
+		System.out.println("----------Transaction Details-----------");
+		System.out.println("Account Number = "+accNum);
+		System.out.println("Current Balance = "+currBalance);
+		System.out.println("Withdrawl Amount = "+withdraw);
+		System.out.println("Remaining Balance = "+remainBalance);
+		System.out.println("Total 500s = "+r1);
+		System.out.println("Total 200s = "+r3);
+		System.out.println("Total 100s = ");
+	}
+}

@@ -1,0 +1,11 @@
+class Demo1 
+{
+	public static void main(String[] args) 
+	{
+		double salary=1002.48;
+		System.out.println(salary);
+		int bonus = 10000;
+		salary= salary+bonus;
+		System.out.println(salary);
+	}
+}

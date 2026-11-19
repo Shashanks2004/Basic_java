@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class AccountDetailScanner
+{
+	public static void main(String[] args) 
+	{Scanner s=new Scanner(System.in);
+        System.out.println("enter account number");
+		long accountNumber = s.nextLong();
+        System.out.println("enter person name");
+		String personName = s.next();
+        System.out.println("enter ifsccode");
+		String ifscCode = s.next();
+        System.out.println("enter branchname");
+		String branchName = s.next();
+        System.out.println("enter accounttype");
+		String accountType = s.next();
+        System.out.println("enter openingbalance");
+		float openingBalance = s.nextFloat();
+        System.out.println("enter currentbalance");
+        float currentBalance = s.nextFloat();
+        System.out.println("enter minimumbalance");
+		float minimumBalance = s.nextFloat();
+        System.out.println("enter intersestrate");
+		String interestRate = s.next();
+        System.out.println("enter phone number");
+		long phNo = s.nextLong();
+        System.out.println("enter accountstatus");
+		String accountstatus = s.next();
+		
+		System.out.println(accountNumber);
+		System.out.println(personName);
+		System.out.println(ifscCode);
+		System.out.println(branchName);
+		System.out.println(accountType);
+		System.out.println(openingBalance);
+		System.out.println(currentBalance);
+		System.out.println(minimumBalance);
+		System.out.println(interestRate);
+		System.out.println(phNo);
+		System.out.println(accountstatus);
+	}
+}

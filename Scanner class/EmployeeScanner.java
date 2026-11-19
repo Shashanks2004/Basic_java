@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class EmployeeScanner
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter ID :");
+		int id = s.nextInt();
+		System.out.println("Enter Name :");
+		String name = s.next();
+		System.out.println("Enter age :");
+		int age = s.nextInt();
+		System.out.println("Enter email :");
+		String email = s.next();
+		System.out.println("Enter Role :");
+		String role = s.next();
+		System.out.println("Enter Salary :");
+		double salary = s.nextDouble();
+		System.out.println("ENter Mobile Number :");
+		long phNo = s.nextLong();
+		System.out.println("Enter Weight :");
+		float weight = s.nextFloat();
+		System.out.println("ENter Gender :");
+		char gender = s.next().charAt(0);
+		
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(email);
+		System.out.println(phNo);
+		System.out.println(gender);
+		System.out.println(weight);
+		System.out.println(role);
+		System.out.println(salary);
+	}
+}

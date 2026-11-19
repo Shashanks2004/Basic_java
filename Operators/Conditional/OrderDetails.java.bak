@@ -1,0 +1,17 @@
+class OrderDetails 
+{
+	public static void main(String[] args) 
+	{
+		String customerName = "Raj";
+		int orderAmt=4500, kms=12, paidAmt=9000;
+		int deliveryCharge = orderAmt > 5000 ? 0 : kms*50 ;
+		int finalAmt = orderAmt+deliveryCharge;
+		int remainingAmt = paidAmt-finalAmt;
+		String paymentStatus = remainingAmt > 0 ? "Refund" : "Payment Pending" ;
+		System.out.println("Customer Name: "+customerName);
+		System.out.println("Delivery Charge: "+deliveryCharge);
+		System.out.println("Final Amount: "+finalAmt);
+		System.out.println("Payment Status: "+paymentStatus);
+		System.out.println("Remaing Amount: "+remainingAmt );
+	}
+}
