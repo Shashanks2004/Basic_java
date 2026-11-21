@@ -1,0 +1,48 @@
+import java.util.Scanner;
+class LoanDetails 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter Customer Id, Name, monthly salary, credit score, existing EMI, requested loan amount :");
+		int id= s.nextInt();
+		String name = s.next();
+		double salary = s.nextDouble(),creditScore=s.nextDouble(),currEMI=s.nextDouble(), reqLoan=s.nextDouble();
+		double cond = salary*0.30;
+		String loan =" ";
+		double rate =0;
+		if(salary>=50000){
+			if(creditScore>=750){
+				if(currEMI<=cond){
+					loan+="Approved";
+					rate = 9;
+				}else{
+					loan+="Approved";
+					rate = 11;
+				}
+			}
+			else{
+				loan+="Approved";
+				rate = 13;
+			}
+		}
+		else if(salary>=30000){
+			if(creditScore>=750){
+				loan+="Approved";
+			    rate = 12;
+			}else{
+				loan+="Rejected";
+			}
+		}
+		else{
+			loan+="Rejected";
+		}
+		
+		double monthlyIntrest = reqLoan/rate;
+		double annualIntrest = monthlyIntrest*12;
+		System.out.println("Loan Eligilibility :"+loan);
+		System.out.println("Applicate rate : "+rate);
+		System.out.println("Monthly intrest amount : "+monthlyIntrest);
+		System.out.println("Total intrest for one year : "+ annualIntrest);
+	}
+}
