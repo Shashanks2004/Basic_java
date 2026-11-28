@@ -1,16 +1,22 @@
 import java.util.Scanner;
 class RecursionEvenPrint 
 {
-	public static int evenDigit(int start,int n)
+	public static void evenDigit(int n)
 	{
-		return n==0 ? 0 : n%start==0 ? n+evenDigit(start+1,n) : evenDigit(start+1,n);
+		if(n==0)
+			return;
+		if(n%2==0){
+			evenDigit(n-1);
+			System.out.println(n);
+		}else{
+			evenDigit(n-1);
+		}
 	}
 	public static void main(String[] args) 
 	{
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter n value");
 		int n=s.nextInt();
-		int res=evenDigit(1,n);
-		System.out.println(res);
+		evenDigit(n);
 	}
 }
